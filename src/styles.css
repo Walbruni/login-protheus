@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NunitoSans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login-image img {
+  display: block;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: auto;
+  margin: 0 auto;
+  max-height: 32px;
+  max-width: 160px;
+  top: 8px;
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.wrap-login {
+  width: 100%;
+}
+
+.login-form-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0 8px;
+  color: #4a5c60;
+  text-align: center;
+}
+
+.login-form-subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #29b6c5;
+  margin-bottom: 1rem;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.wrap-input input {
+  width: 100%;
+  position: relative;
+  padding: 8px 0;
+  appearance: textfield;
+  background-color: #fff;
+  border: 1px solid #b6bdbf;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.container-login-form-btn button {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  height: 32px;
+  padding: 0 8px;
+  text-align: center;
+  background-color: #b6bdbf;
+  border: 1px solid #b6bdbf;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
+  color: #fff;
+  cursor: default;
+}
+
+.po-image {
+  display: flex;
+  justify-content: right;
+  height: auto;
+  margin: 0 auto;
+  max-height: 32px;
+  max-width: 160px;
+  top: 8px;
+}

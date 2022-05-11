@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import poColor from "./assets/po_color.svg";
+import poBlack from "./assets/po_black.svg";
+
+import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <span className="login-image">
+        <img src={poColor} alt="logo PO" />
+      </span>
+      <div className="container-login">
+        <div className="wrap-login">
+          <form className="login-form">
+            <span className="login-form-title">Integração Protheus</span>
+            <span className="login-form-subtitle">
+              <b>Boas-vindas</b>
+            </span>
+
+            <div className="wrap-input">
+              <input type="email" placeholder="Insira seu e-mail" />
+            </div>
+            <div className="wrap-input">
+              <input type="password" placeholder="Insira sua senha" />
+            </div>
+
+            <div className="container-login-form-btn">
+              <button className="login-form-btn">Entrar</button>
+            </div>
+
+            <div className="text-languages">
+              <select>
+                <option value="english">English</option>
+                <option value="espanol">Español</option>
+                <option value="portugues" selected>
+                  Português
+                </option>
+                <option value="pусский">Pусский</option>
+              </select>
+              <span className="po-image">
+                <img src={poBlack} alt="logo PO black" />
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
